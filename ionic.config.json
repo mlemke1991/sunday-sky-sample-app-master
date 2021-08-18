@@ -1,0 +1,8 @@
+{
+  "name": "Sunday-Sky-Sample-App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "0617c862"
+}
