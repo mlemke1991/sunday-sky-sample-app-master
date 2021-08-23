@@ -25,7 +25,7 @@ exports.config = {
     print: function() {}
   },
   async onPrepare() {
-    await browser.waitForAngularEnabled(false);
+
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.json')
     });
@@ -34,5 +34,6 @@ exports.config = {
         displayStacktrace: StacktraceOption.PRETTY
       }
     }));
+    await browser.waitForAngularEnabled(false);
   }
 };
